@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #00cec9;
+    display: flex;
+    flex-wrap: wrap;
+}
+.note{
+    width:400px;
+    height: 400px;
+    background-color: #1e272e;
+    margin:15px;
+}
+.toolbox{
+    width: 100%;
+    padding: 10px;
+    color: black;
+    background-color: whitesmoke;
+}
