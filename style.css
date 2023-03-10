@@ -22,4 +22,11 @@
     padding: 10px;
     color: black;
     background-color: whitesmoke;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+.toolbox i{
+    padding: 5px;
+    cursor: pointer;
 }
