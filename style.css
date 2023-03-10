@@ -10,12 +10,49 @@
     background-color: #00cec9;
     display: flex;
     flex-wrap: wrap;
+    padding: 10px 0px 50px 20px;
+    overflow: hidden;
+}
+#addbtn{
+    position: fixed;
+    right:0px;
+    top: 0px;
+    padding: 12px;
+    cursor: pointer;
+    background-color: #1e272e;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 0px;
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    position: sticky;
+    position: fixed;
+    z-index: 1;
 }
 .note{
     width:400px;
     height: 400px;
     background-color: #1e272e;
     margin:15px;
+    box-shadow: 0px 0px 20px gray;
+    margin-top: 60px;
+}
+.note textarea{
+    width: 100%;
+    height: 100%;
+    resize: none;
+    border: 0;
+    outline: none;
+    background-color: #1e272e;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+}
+.note textarea:focus{
+    border: none;
+    outline: none;
 }
 .toolbox{
     width: 100%;
@@ -25,8 +62,16 @@
     display: flex;
     justify-content: end;
     align-items: end;
+    position: relative;
+}
+.toolbox h2{
+    position: absolute;
+    left: 10px;
+    font-family: 'Lucida Sans';
+    font-size: 20px;
 }
 .toolbox i{
     padding: 5px;
     cursor: pointer;
+    font-size: 20px;
 }
