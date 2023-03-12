@@ -1,7 +1,8 @@
 const addBtn = document.querySelector("#addbtn");
 let main = document.querySelector("#main");
 
-addBtn.addEventListener("click", function(){
+
+addBtn.addEventListener("click",()=>{
     addNote();
 })
 
@@ -12,9 +13,16 @@ const addNote = ()=>{
               <div class="toolbox">
                 <h2>Notes</h2>
                 <i class="fa-solid fa-floppy-disk"></i>
-                <i class="fa-solid fa-trash"></i>
+                <i class="delete fa-solid fa-trash"></i>
               </div>
               <textarea></textarea>
     `;
+  
+    note.querySelector(".delete").addEventListener("click",()=>{
+      note.remove();
+    })
+
     main.appendChild(note);
+
 } 
+addNote();
